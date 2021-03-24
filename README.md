@@ -8,6 +8,6 @@ Run script.py
 
 
 ## TODO
-Optimize simulation\n
-Replace run script with gui\n
+Optimize simulation  
+Replace run script with gui  
 Add colors
