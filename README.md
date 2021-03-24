@@ -1,5 +1,11 @@
 # GravitySetFractals
 
+## To use
+
+Run script.py
+
+
 ## TODO
-Add replace run script with gui
+Optimize simulation
+Replace run script with gui
 Add colors

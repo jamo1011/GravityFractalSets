@@ -10,7 +10,7 @@ from PIL import Image
 
 class GravitySet:
 
-     def run(self):
+    def run(self):
         startTime = time.time()
 
         #initialize
@@ -155,7 +155,6 @@ class GravitySet:
         print('woah time: {}'.format(time.time()-startTime))
 
     def addColor(self, colors):
-        
         pass
 
     def hex_to_rgb(self, value):
@@ -163,7 +162,4 @@ class GravitySet:
         return list(int(value[i:i+2], 16) for i in (0,2,4))
 
     def export(self):
-        pass
-
-    def synthisizer():
         pass
