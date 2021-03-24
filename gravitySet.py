@@ -10,7 +10,7 @@ from PIL import Image
 
 class GravitySet:
 
-    def run(self):
+     def run(self):
         startTime = time.time()
 
         #initialize
@@ -102,7 +102,6 @@ class GravitySet:
         print('Total Time: {} seconds'.format(time.time()-self.startTime))
 
     def plotPoint(self):
-
         if not self.test:
             print('plotPoint only works in Test mode')
             return 0
@@ -151,8 +150,17 @@ class GravitySet:
         im = Image.fromarray(np.transpose(temp2*255))
         im = im.convert('L')
         im.show()
-        im.save('results/{}.png'.format(time.time()-self.startTime))
+        self.fileName = 'results/{}.png'.format(time.time()-self.startTime)
+        im.save(self.fileName)
         print('woah time: {}'.format(time.time()-startTime))
+
+    def addColor(self, colors):
+        
+        pass
+
+    def hex_to_rgb(self, value):
+        value = value.lstrip('#')
+        return list(int(value[i:i+2], 16) for i in (0,2,4))
 
     def export(self):
         pass
